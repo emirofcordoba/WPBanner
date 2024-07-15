@@ -1,0 +1,11 @@
+{
+  "main": "index.mjs",
+  "scripts": {
+    "start": "npm install && node index.mjs"
+  },
+  "dependencies": {
+    "gradient-string": "latest",
+    "figlet": "latest"
+  },
+  "type": "module"
+}
