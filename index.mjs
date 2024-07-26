@@ -21,13 +21,13 @@ const getUserInput = (query) => {
 };
 
 const main = async () => {
-  const promptMessage = createGradientText("Input your victim's TikTok username without '@'", ['#ff5f6d', '#ffc371']);
+  const promptMessage = createGradientText("Input your victim's WhatsApp number with '+' and country code after '+'", ['#ff5f6d', '#ffc371']);
   clearAndDisplay(promptMessage);
   const username = await getUserInput('');
 
   setTimeout(async () => {
     clearAndDisplay('');
-    const logMessage = `Reports sending by @MogaTeam to TikTok user @${username}`;
+    const logMessage = `Reports sending by @MogaTeam to WhatsApp number @${username}`;
     const gradientLogMessage = createGradientText(logMessage, ['#00c6ff', '#0072ff']);
     clearAndDisplay(gradientLogMessage);
 
